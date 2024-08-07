@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import Formulario from "./components/Formulario";
 import Tabla from "./components/Tabla";
-import productos from "./constants/productos";
 import { v4 as uuidv4 } from 'uuid';
 const Productos = () => {
   const url = import.meta.env.VITE_API_PRODUCTOS

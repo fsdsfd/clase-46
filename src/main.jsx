@@ -11,9 +11,11 @@ import Nosotros from './pages/Nosotros.jsx'
 import Inicio from './pages/Inicio.jsx'
 import Navbar from './components/Navbar.jsx'
 import DetalleProducto from './pages/DetalleProducto.jsx'
+import { ProductosProvider } from './contexts/ProductoContext.jsx'
 // Creamos un componente
 ReactDOM.createRoot(document.getElementById('root')).render(
-    <BrowserRouter>
+    <ProductosProvider>
+        <BrowserRouter>
         {/* Navbar */}
         <Navbar/>
         <Routes>
@@ -29,6 +31,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
         </Routes>
     </BrowserRouter>
+    </ProductosProvider>
+    
 )
     /* <InicioApp></InicioApp>  Sacar el strictmode al principio*/
     /* Se puede cerrar de las 2 maneras, como un elemento html con 2 partes o así/ */

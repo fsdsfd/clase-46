@@ -1,10 +1,8 @@
-import React, { useEffect } from 'react'
+import React, { useContext, useEffect } from 'react'
+import ProductosContext from '../contexts/ProductoContext'
 
 const Contacto = () => {
-    useEffect(() => {
-    document.title = 'Educacion IT- Contacto'
-    }, [])
-    
+    const obj = useContext(ProductosContext)  
   return (
     <div>Contacto</div>
   )
