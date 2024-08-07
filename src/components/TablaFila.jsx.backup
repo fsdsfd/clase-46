@@ -1,0 +1,54 @@
+import React from 'react'
+import Swal from 'sweetalert2'
+
+const TablaFila = ({product, eliminarProducto}) => {
+    console.log(product)
+    const handleEliminar = ()=>{
+      console.log(product.id)
+      console.log('hicieron click')
+      // Creando una alerta para confirmar el eliminar
+      // let isDelete = window.confirm(`¿Estás seguro de eliminar el producto con el nombre: ${product.nombre}`)
+
+      // if (isDelete) {
+      //   eliminarProducto(product.id)
+      // } else {
+      //   return // break 
+      // } 
+      // Se puede crear un archivo aparte para esto
+      Swal.fire({
+        title: `Estás seguro de que querés eliminar el producto ${product.id}`,
+        text: "You won't be able to revert this!",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText : 'Si, adelante',
+        cancelButtonText: "No papá"
+      }).then((result) => { // Después de borrado
+        if (result.isConfirmed) {
+          eliminarProducto(product.id)
+          Swal.fire({
+            title: "Lo borré!",
+            text: "Your file has been deleted.",
+            icon: "success"
+          });
+        }
+      });
+      
+    }
+  return (
+  
+    <tr>
+      <td>{product.nombre}</td>
+      <td>{product.categoria}</td>
+      <td>{product.precio}</td>
+      <td>
+        <button className="btn btn-warning">Editar</button>
+        <button className="btn btn-danger" onClick={handleEliminar}>Eliminar</button>
+      </td>
+    </tr>
+
+  )
+}
+
+export default TablaFila

@@ -1,0 +1,52 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Heladera",
+      "categoria": "Electro",
+      "precio": "12122"
+    },
+    {
+      "id": 2,
+      "nombre": "Microondas",
+      "categoria": "Electro",
+      "precio": 343.3
+    },
+    {
+      "id": 3,
+      "nombre": "Televisor",
+      "categoria": "Electro",
+      "precio": 211.3
+    },
+    {
+      "id": 4,
+      "nombre": "Monitor",
+      "categoria": "Informatica",
+      "precio": 93.2
+    },
+    {
+      "id": 5,
+      "nombre": "Impresora",
+      "categoria": "Informatica",
+      "precio": 654.3
+    },
+    {
+      "id": 6,
+      "nombre": "Mouse",
+      "categoria": "Informatica",
+      "precio": 33.3
+    },
+    {
+      "id": 7,
+      "nombre": "CD",
+      "categoria": "Informatica",
+      "precio": "23"
+    },
+    {
+      "id": 8,
+      "nombre": "celular",
+      "categoria": "electro",
+      "precio": "13413"
+    }
+  ]
+}
