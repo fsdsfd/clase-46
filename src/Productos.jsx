@@ -7,7 +7,7 @@ import productos from "./constants/productos";
 import { v4 as uuidv4 } from 'uuid';
 const Productos = () => {
   const url = import.meta.env.VITE_API_PRODUCTOS
-  const [products, setProducts] = useState(productos); // Array, tenemos que modificar el array de productos
+  const [products, setProducts] = useState(null); // Array, tenemos que modificar el array de productos
   console.log(products);
   useEffect(() => {
     document.title = 'Educacion IT- Productos'
