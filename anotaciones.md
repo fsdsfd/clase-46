@@ -44,3 +44,6 @@ y se detiene con ctrl + c
 React Router
 npm i react-router react-router-dom
 CAMBIAR A MOCKAPI LA PARTE 2 DEL PROYECTO
+
+Usar git rm para borrar un archivo
+git rm --

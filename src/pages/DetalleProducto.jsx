@@ -15,7 +15,7 @@ const DetalleProducto = () => {
     
     console.log(id)
     const getOneProducto = async ()=>{
-      const url = 'http://localhost:8080/productos/'
+      const url = 'https://6695aff80312447373bfcc6e.mockapi.io/id/productos/'
       try {
         const urlPeticion = url + id
         const res = await fetch(urlPeticion)
